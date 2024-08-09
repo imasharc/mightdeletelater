@@ -3,13 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Website</title>
+    <title>mightdeletelater</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to My Simple Website</h1>
-    <p>This is a simple static website hosted on Azure.</p>
-    <button onclick="greet()">Click me</button>
+    <h1>This (simple static) website is under continuous construction...</h1>
+    <p>...the intention is to "host" multiple experiments, microservices, whatever-i-can-think-of, etc.</p>
+    
+    <a href="https://github.com/imasharc/mightdeletelater" target="_blank">source code on github</a>
+
+    <h2>Available Microservices</h2>
+    <ul id="microservices-list">
+        <li>
+            <a href="#" onclick="toggleIframe('microservice1'); return false;">Wiki Search Service (html/js/flask+json)</a> 
+            <a href="https://trywikisearch.azurewebsites.net/" target="_blank">(Go trywikisearch.azurewebsites.net)</a>
+            <div id="microservice1" class="microservice-iframe" style="display: none;">
+                <iframe src="https://trywikisearch.azurewebsites.net/" frameborder="0"></iframe>
+            </div>
+        </li>
+    </ul>
+
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,8 +1,11 @@
-﻿function greet() {
-  // Create a new paragraph element
-  const newText = document.createElement("p");
-  // Set the text content of the new paragraph
-  newText.textContent = "JavaScript is working";
-  // Append the new paragraph to the body or another container element
-  document.body.appendChild(newText);
+﻿function toggleIframe(id) {
+  const iframeContainer = document.getElementById(id);
+  if (
+    iframeContainer.style.display === "none" ||
+    iframeContainer.style.display === ""
+  ) {
+    iframeContainer.style.display = "block";
+  } else {
+    iframeContainer.style.display = "none";
+  }
 }
